@@ -18,7 +18,7 @@ while true; do
             ;;
         2)
             echo "Arquivo mais antigo:"
-            ls -ltr | tail -n 1
+            ls -ltr | tail -n 1 | awk '{print $9, $6, $7, $8}'
             ;;
         3)
             echo -n "Digite o nome do grupo: "
